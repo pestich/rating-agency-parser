@@ -1,15 +1,15 @@
-# Парсер пресс-релизов рейтинговых агентств
+# Rating Agencies Press Release Parser
 
-Данный проект представляет собой парсер пресс-релизов рейтинговых агентств с использованием библиотек Selenium и BeautifulSoup4. Цель проекта заключается в сборе данных для последующего анализа. Полученные данные будут использоваться для построения ML-модели классификации и выделения ключевых конструкций в тексте пресс-релизов.
+This project is a web scraper designed to extract data from press releases published by rating agencies. It utilizes the Selenium and BeautifulSoup4 libraries. The primary goal of the project is to collect data for subsequent analysis. The obtained data will be used for building a machine learning classification model and identifying key constructs within the text.
 
-## Зачем это нужно?
+## Why is this necessary?
 
-Рейтинговые агентства регулярно выпускают пресс-релизы с информацией о своих рейтингах, аналитических обзорах и оценках компаний и финансовых инструментов. Эти данные могут быть очень полезными для анализа рынка, оценки финансовой устойчивости компаний и других финансовых исследований.
+Rating agencies regularly release press releases containing information about their ratings, analytical reviews, and assessments of companies and financial instruments. This data can be highly valuable for market analysis, evaluating the financial stability of companies, and other financial research purposes.
 
-## Как работает парсер?
+## How does the parser work?
 
-1. **Selenium**: Мы используем библиотеку Selenium для автоматизации веб-браузера. Это позволяет нам перейти на веб-сайты рейтинговых агентств, пройти аутентификацию (если необходимо), и перейти к страницам с пресс-релизами.
+1. **Selenium**: We use the Selenium library to automate web browsing. This enables us to navigate to the websites of rating agencies, authenticate (if required), and access pages with press releases.
 
-2. **BeautifulSoup4**: После загрузки страниц с пресс-релизами, мы используем библиотеку BeautifulSoup4 для парсинга HTML и извлечения необходимой информации. Это включает в себя заголовки, текст пресс-релизов, даты публикации и другие релевантные данные.
+2. **BeautifulSoup4**: After loading the pages with press releases, we employ the BeautifulSoup4 library to parse the HTML and extract the necessary information. This includes headlines, press release text, publication dates, and other relevant data.
 
-3. **Сохранение данных**: Полученные данные сохраняются в структурированный формат, который затем можно использовать для анализа и обучения ML-модели.
+3. **Data Storage**: The extracted data is saved in a structured format that can be used for analysis and training a machine learning model.
